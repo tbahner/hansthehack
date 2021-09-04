@@ -12,7 +12,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
-  grid-template-rows: minmax(3em, auto) 1fr 1fr 1fr auto minmax(3em, auto);
+  grid-template-rows: minmax(3em, auto) 5em 1fr auto auto minmax(3em, auto);
   grid-gap: 0.5em;
 }
 
@@ -61,8 +61,6 @@ header {
 main {
   grid-column: 2 / 6;
   grid-row: 3 / 4;
-  justify-content: center;
-  align-content: center;
   padding-left: 20px;
   padding-right: 10px;
 }
@@ -132,4 +130,46 @@ img {
   grid-column: 5 / 8;
   padding-left: 50px;
   padding-right: 0px;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1em;
+  min-width: 450px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #e9c46a;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table thead tr th,
+.content-table tbody tr td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:hover {
+  font-weight: bold;
+  color: #e9c46a;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #e9c46a;
+}
+
+#text-align-right {
+  text-align: right;
 }
