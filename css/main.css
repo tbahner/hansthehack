@@ -65,11 +65,11 @@ main {
   padding-right: 10px;
 }
 
-.text-hightlight-dark_xx {
+/* .text-hightlight-dark {
   background-color: #232323;
   color: white;
   box-shadow: 10px 0 0px 0px #232323, -10px 0 0px 0px #232323;
-}
+} */
 
 h1 {
   font-size: 2.5em;
@@ -88,12 +88,12 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #e76f51;
 }
 
 a:hover {
   text-decoration: underline;
-  color: blue;
+  color: #e76f51;
 }
 
 .sidebar {
@@ -158,7 +158,6 @@ img {
 }
 
 .content-table tbody tr:hover {
-  font-weight: bold;
   color: #e9c46a;
 }
 
